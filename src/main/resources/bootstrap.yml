@@ -1,0 +1,15 @@
+#服务名称
+spring:
+  application:
+    name: nacosDemo
+    cloud:
+      nacos:
+        # 发布服务时需要加上这个，不然Nacos无法监听到
+        config:
+          prefix: lzyang6
+          # 开发空间名称
+          namespace: #填写上面Nacos中的namespace（就是开发空间边上那段）
+          # Nacos地址
+          server-addr: 192.168.44.7:8848
+  server:
+    port: 8500
